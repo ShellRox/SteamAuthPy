@@ -45,11 +45,11 @@ Returns decoded Json of file containing all information that was logged when exe
 
 # requestAuthCode(time, shared_secret)
 
-Returns generated Two-Factor Authentication code.
+Returns generated Two-factor authentication code from time and shared_secret.
 
-# requestConfKey(time, shared_secret, tag)
+# requestConfKey(time, identity_secret, tag)
 
-Returns generated trade offer confirmation key.
+Returns generated trade offer confirmation key from time, identity secret and tag name.
 
 # requestLogin(username, password, shared_secret)
 
