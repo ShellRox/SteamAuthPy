@@ -35,7 +35,8 @@ Returns generated working Android's UDID by your SteamID64.
 
 # requestSetup(steamId, Oauth, UDID, logging=True)
 
-Add Steam's mobile authenticator on your account
+Add Steam's mobile authenticator on your account.
+
 If logging argument is False, Response which contains important data (e.g shared_secret & identity_secret) will not be logged in `shared_secrets.json` file. Please change this argument only if you are 100% sure that you will save this data manually.
 
 # requestSecrets()
