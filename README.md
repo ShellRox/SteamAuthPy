@@ -14,11 +14,11 @@ print(r.requestConfKey(time.time(), "caOdv/kdRloP9nbh3gMkxKaXALI=", "conf"))
 ---
 # requestGuide()
 
-Returns a string of information about all functions in controller and arguments that they take
+Returns a string of information about all functions in controller and arguments that they take.
 
 # requestOauth(*path)
 
-Uses regex to find Oauth (Access) token from Steam's chat. If path argument is not entered, `authentication/steamchat.html` is checked
+Uses regex to find Oauth (Access) token from Steam's chat. If path argument is not entered, `authentication/steamchat.html` is checked.
 
 You are required to copy HTML like this in order for module to work:
 
@@ -31,26 +31,26 @@ You are required to copy HTML like this in order for module to work:
 
 # requestDeviceId(steamId)
 
-Returns generated working Android's UDID by your SteamID64
+Returns generated working Android's UDID by your SteamID64.
 
 # requestSetup(steamId, Oauth, UDID, logging=True)
 
 Add Steam's mobile authenticator on your account
-If logging argument is False, Response which contains important data (e.g shared_secret & identity_secret) will not be logged in `shared_secrets.json` file. Please change this argument only if you are 100% sure that you will save this data manually
+If logging argument is False, Response which contains important data (e.g shared_secret & identity_secret) will not be logged in `shared_secrets.json` file. Please change this argument only if you are 100% sure that you will save this data manually.
 
 # requestSecrets()
 
-Returns decoded Json of file containing all information that was logged when executing requestSetup function
+Returns decoded Json of file containing all information that was logged when executing requestSetup function.
 
 # requestAuthCode(time, shared_secret)
 
-Returns generated Two-Factor Authentication code
+Returns generated Two-Factor Authentication code.
 
 # requestConfKey(time, shared_secret, tag)
 
-Returns generated trade offer confirmation key
+Returns generated trade offer confirmation key.
 
 # requestLogin(username, password, shared_secret)
 
-Returns a requests session containing all cookies obtained from Authentication (In short, It returns login session if correct arguments are passed)
+Returns a requests session containing all cookies obtained from Authentication (In short, It returns login session if correct arguments are passed).
 
