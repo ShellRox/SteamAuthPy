@@ -1,7 +1,11 @@
-# SteamLoginPy
+# SteamAuthPy
 Simple module to authenticate on Steam website with Python 2
 
 **This module only supports Python 2.7-2.6 versions, If you use Python 3, Please use [steampy](https://github.com/bukson/steampy) (We are not associated in any way with steampy).**
+
+# Install
+You can install this module using Python's official package manager:
+`pip install SteamAuthPy`
 
 To easily use this module, Simply define the instance of called `Request` object:
 
