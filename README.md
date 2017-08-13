@@ -6,6 +6,7 @@ Simple module to authenticate on Steam website with Python 2
 # Install
 You can install this module using Python's official package manager:
 `pip install SteamAuthPy`
+---
 
 To easily use this module, Simply define the instance of called `Request` object:
 
