@@ -108,4 +108,3 @@ class SteamGuard(object):
 
 
 s = SteamGuard()
-#print s.get_confirmation_key(time.time(), "CVR/ie4geiu8OGNwivZBktVxkPw=", "conf")
