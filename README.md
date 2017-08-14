@@ -11,7 +11,7 @@ You can install ths module with pip:
 
 # Methods
 
-** Example **
+*Example*
 
 ```python
 import SteamAuthPy
@@ -46,10 +46,14 @@ Returns generated working Android's UDID by your SteamID64.
 
 # setup(steamId, Oauth, UDID, logging=True)
 
-`steamId` - SteamID64 (String)
-`Oauth` - Access Token (String)
-`UDID` - Unique Device Identifier (device id) (String)
-`logging` - Boolean value (True/False)
+`steamId` - SteamID64 (String);
+
+`Oauth` - Access Token (String);
+
+`UDID` - Unique Device Identifier (device id) (String);
+
+`logging` - Boolean value (True/False);
+
 
 Add Steam's mobile authenticator on your account.
 
@@ -61,24 +65,29 @@ Returns decoded Json of file containing authenticator response information if it
 
 # requestAuthCode(time, shared_secret)
 
-`time` - Unix time (Should be current time in most of the cases)
-`shared_secret` - Shared secret key
+`time` - Unix time (Should be current time in most of the cases);
+
+`shared_secret` - Shared secret key;
 
 Returns generated Two-factor authentication code from time and shared_secret.
 
 # requestConfKey(time, identity_secret, tag)
 
-`time` - Unix time (Should be current time in most of the cases)
-`identity-secret` - Identity secret key
-`tag` - Tag that should be added to bytearray
+`time` - Unix time (Should be current time in most of the cases);
+
+`identity-secret` - Identity secret key;
+
+`tag` - Tag that should be added to bytearray;
 
 Returns generated trade offer confirmation key from time, identity secret and tag name.
 
 # requestLogin(username, password, shared_secret)
 
-`username` - Username of your Steam account
-`password` - Password of your Steam account
-`shared_secret` - Shared secret key
+`username` - Username of your Steam account;
+
+`password` - Password of your Steam account;
+
+`shared_secret` - Shared secret key;
 
 Returns a requests session containing all cookies obtained from Authentication (In short, It returns login session if correct arguments are passed).
 
