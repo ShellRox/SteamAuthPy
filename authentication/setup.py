@@ -12,7 +12,7 @@ class AddAuthenticator(object):
 
     def registerAuthenticator(self, steamId, Oauth, UDID):
 
-        req = requests.post("https://api.steampowered.com/ITwoFactorService/AddAuthenticator/v1/?key=AFC007D4145C90CC836E48A5FC68264A/", data={
+        req = requests.post("https://api.steampowered.com/ITwoFactorService/AddAuthenticator/v1/", data={
             "steamid": str(steamId),  # Your SteamID64
             "access_token": str(Oauth),  # Oauth (Access) token
             "authenticator_time": int(time.time()),  # Time in microseconds
