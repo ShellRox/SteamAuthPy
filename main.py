@@ -40,19 +40,18 @@ def setup(steamId, Oauth, UDID, logging=True):
     else:
         raise ValueError("Please enter proper steamId")
 
-def secrets(self):
+def secrets():
     with open('authentication/shared_secrets.json', 'r') as data:
         return json.load(data)
 
-def authcode(secret):
+def authcode(tm, secret):
     obj = SteamGuard()
     return obj.get_auth_code(int(tm), str(secret))
 
-def confkey(secret, tag):
+def confkey(tm, secret, tag):
     obj = SteamGuard()
     return obj.get_confirmation_key(int(tm), str(secret), tag)
 
 def login(username, password, shared_secret):
     _login = Login(str(username), str(password), str(shared_secret))
     return _login.getInfo()
-
