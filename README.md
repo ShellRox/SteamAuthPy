@@ -63,7 +63,7 @@ If logging argument is False, Json response which contains important data (e.g s
 
 Returns decoded Json of file containing authenticator response information if it was logged
 
-# requestAuthCode(time, shared_secret)
+# authcode(time, shared_secret)
 
 `time` - Unix time (Should be current time in most of the cases);
 
@@ -71,7 +71,7 @@ Returns decoded Json of file containing authenticator response information if it
 
 Returns generated Two-factor authentication code from time and shared_secret.
 
-# requestConfKey(time, identity_secret, tag)
+# confkey(time, identity_secret, tag)
 
 `time` - Unix time (Should be current time in most of the cases);
 
@@ -81,7 +81,7 @@ Returns generated Two-factor authentication code from time and shared_secret.
 
 Returns generated trade offer confirmation key from time, identity secret and tag name.
 
-# requestLogin(username, password, shared_secret)
+# login(username, password, shared_secret)
 
 `username` - Username of your Steam account;
 
